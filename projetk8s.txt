@@ -1,0 +1,21 @@
+
+lien git
+https://github.com/bart120/cloudobsm2/tree/main/projet_k8s
+
+lien docs word
+https://auvencecom-my.sharepoint.com/:w:/g/personal/laeticia_elkechai_ynov_com/EahYHlKpEgJKgMx3-LJUj_cBPhE92aigBh9uGbMoFP6P2g?e=ysUvlT
+
+Remarques projet:
+redis on prend image officielle 
+
+2 options de deploiment: local (docker desktop, minikube)  
+                         azure AKS (je prefere pour eviter le probleme de limitation de ressources sur nos machines) on aura juste en + fichiers terraform a creer pour l'infrastructure azure et le push des  images dans un ACR 
+
+
+securite HTTPS + certificat auto signe donc oblige d'utiliser host (nom de domaine) dans la config ingress et non adresse ip du cluster car un certificat SSL est lié à un nom de domaine et non a une ip
+
+pour la config du certificat ----> soit manuellement avec Openssl (pas applicable si deploiment  sur azure)
+                             ----> soit automatiquement avec "cert manager" genere par kubernetes ( solution si deploiment sur azure)
+
+deploiment automatise a la fin dans un helm install mais pas de controller ingress dans le helm uniquement deploiment services pods
+
