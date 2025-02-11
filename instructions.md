@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Projet Conteneurisation et Orchestration
 
@@ -72,3 +73,6 @@ Afin d'automatiser le déploiement sur d'autres clusters, vous allez mettre en p
 ### Groupes et fonctionnement
 
 // ...additional details about groups and functioning...
+=======
+# ProjectKub
+>>>>>>> 71065c6ea3b7432fc9f5cd54b400ab8f663a4092
